@@ -10,7 +10,7 @@ RUN echo "deb http://packages.erlang-solutions.com/ubuntu trusty contrib" >> /et
     && apt-key adv --fetch-keys http://packages.erlang-solutions.com/ubuntu/erlang_solutions.asc \
     && apt-get -qq update \
     # Install Elixir
-    && apt-get install -y erlang-dev erlang-parsetools elixir \
+    && apt-get install -y erlang-dev erlang-parsetools elixir inotify-tools \
     # Cleanup
     && apt-get clean
 
